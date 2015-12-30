@@ -1,0 +1,36 @@
+#N canvas 1790 791 694 515 10;
+#X obj 245 296 dac~;
+#X obj 249 241 *~;
+#X obj 333 218 / 127;
+#X obj 339 70 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 500 1;
+#X obj 173 34 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4300 1;
+#X obj 219 100 mtof;
+#X obj 248 155 osc~;
+#X floatatom 193 66 5 0 0 0 - - -, f 5;
+#X floatatom 381 190 5 0 0 0 - - -, f 5;
+#X obj 481 55 notein;
+#X floatatom 432 128 5 0 0 0 - - -, f 5;
+#X floatatom 484 128 5 0 0 0 - - -, f 5;
+#X floatatom 539 129 5 0 0 0 - - -, f 5;
+#X text 170 15 Frequency of debugging hum;
+#X text 326 52 Hum volume;
+#X text 422 142 pitch;
+#X text 479 145 channel;
+#X text 540 147 velocity;
+#X text 482 36 MIDI in!;
+#X text 278 295 audio output;
+#X text 170 156 oscillator;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 1;
+#X connect 3 0 2 0;
+#X connect 3 0 8 0;
+#X connect 4 0 7 0;
+#X connect 5 0 6 0;
+#X connect 6 0 1 0;
+#X connect 7 0 5 0;
+#X connect 9 0 10 0;
+#X connect 9 1 11 0;
+#X connect 9 2 12 0;
