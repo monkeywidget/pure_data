@@ -9,6 +9,10 @@ Patch side
 - https://puredata.info/docs/faq/faqsection_view?section=Using%20Pd
 - http://en.flossmanuals.net/pure-data/ch067_using-midi/
 
+- http://www.pd-tutorial.com/english/ch04s03.html
+     - notein
+     - midiin
+
 
 Device side
 ===========
